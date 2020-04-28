@@ -18,14 +18,14 @@ const displayDate = () => {
 const num_to_str = (num) =>{
   return num.toString();
 }
-num_to_str(5);
+num_to_str();
 
 
 // Write a JavaScript program to convert a string to the number.
 const str_to_num = (str) =>{
   return str.parseInt();
 }
-str_to_num('5');
+str_to_num();
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -42,6 +42,9 @@ const get_type = (data) =>{
 get_type()
   
 // Write a JavaScript program that adds 2 numbers together.
+const addTwo = (x, y) =>{
+  return x + y;
+}
 
 
 
@@ -54,6 +57,11 @@ get_type()
 
 
 // Write a JavaScript program that runs when both things are not true.  
+const checkBool = (boolFirst, boolSecond) =>{
+  if(boolFirst == true && boolSecond == true){
+    return "Both values are true";
+  }
+}
 
 // ***************************
 //         PART TWO
