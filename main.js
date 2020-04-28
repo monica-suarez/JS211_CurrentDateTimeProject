@@ -22,10 +22,16 @@ const num_to_str = () =>{
   console.log(typeof(toStr));
 }
 
+// const str_to_num = (str) =>{
+//   return str.parseInt();
+// }
 const str_to_num = () =>{
   let str = document.getElementById("str").value
-  toNum = str.parseInt();
-  
+  toNum = parseInt(str);
+  document.getElementById("show-num").innerHTML = toNum;
+  document.getElementById("show-num-type").innerHTML = typeof(toNum);
+  console.log(toNum);
+  console.log(typeof(toNum));
 }
 
 
