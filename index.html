@@ -21,7 +21,7 @@
     <div id="show-str-type" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
     <hr/>
     <hr/>
-    <label for="enterStr">Enter string, return a number</label>
+    <label for="str">Enter string, return a number</label>
     <input type="" id="str" name="str" value="">
     <button onclick="str_to_num()" id="str-to-num-btn">
       Number
@@ -30,11 +30,12 @@
     <div id="show-num-type" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
     <hr/>
     <hr/>
-    <label for="dataType">Get data type</label>
-    <input id="dataType">
-    <button>
+    <label for="data">Get data type</label>
+    <input id="data" name="data" value="">
+    <button onclick="get_type()" id="get-type-button">
       Type
     </button>
+    <div id="show-data-type" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
     <hr/>
     <hr/>
     <label for="addTwoNums">Add two numbers together</label>
@@ -50,6 +51,7 @@
     <input id="boolFirst" name="boolFirst">
     <input id="boolSecond" name="boolSecond">
     <button>
+    <div id="show-bool-result" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
       Outcome
     </button>
     <hr/>

@@ -33,12 +33,16 @@ const str_to_num = () =>{
   console.log(toNum);
   console.log(typeof(toNum));
 }
+// const get_type = (data) =>{
+//   console.log(typeof(data));
+// }
+const get_type = () =>{
+  let data = document.getElementById("data").value
+  // getType = typeof(data);
+  document.getElementById("show-data-type").innerHTML = typeof data;
+  console.log(typeof data);
 
-
-const get_type = (data) =>{
-  return typeof(data);
 }
-
 const addTwo = () =>{
   let x = parseInt(document.getElementById("x").value);
   let y= parseInt(document.getElementById("y").value);
