@@ -13,29 +13,33 @@ const displayDate = () => {
   document.getElementById("display-element").innerHTML = currentDate;
 }
  
-
-// Write a JavaScript program to convert a number to a string.
-const num_to_str = (num) =>{
-  return num.toString();
+const num_to_str = () =>{
+  let num = document.getElementById("num").value
+  toStr = num.toString();
+  document.getElementById("show-str").innerHTML = toStr;
+  document.getElementById("show-str-type").innerHTML = typeof(toStr);
+  console.log(toStr);
+  console.log(typeof(toStr));
 }
 
-
-
-// Write a JavaScript program to convert a string to the number.
-const str_to_num = (str) =>{
-  return str.parseInt();
+const str_to_num = () =>{
+  let str = document.getElementById("str").value
+  toNum = str.parseInt();
+  
 }
-str_to_num();
+
 
 const get_type = (data) =>{
   return typeof(data);
 }
-get_type();
-  
-const addTwo = (x, y) =>{
-  return x + y;
-}
 
+const addTwo = () =>{
+  let x = parseInt(document.getElementById("x").value);
+  let y= parseInt(document.getElementById("y").value);
+  sum = x+y;
+  document.getElementById("show-sum").innerHTML = sum;
+  console.log(sum);
+}
 
 const checkBool = (boolFirst, boolSecond) =>{
   if(boolFirst == true && boolSecond == true){

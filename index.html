@@ -13,14 +13,18 @@
     <hr/>
     <hr/>
     <label for="enterNum">Enter number, return a string</label>
-    <input id="enterNum">
-    <button>
+    <input type="number" id="num" name="num" value="">
+    <button onclick="num_to_str()" id="num-to-str-btn">
       String
     </button>
+    <div id="show-str" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
+    <div id="show-str-type" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
     <hr/>
     <hr/>
     <label for="enterStr">Enter string, return a number</label>
-    <input id="enterStr">
+    <input type="text" id="str" name="str" value="">
+    <div id="show-int" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
+    <div id="show-int-type" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
     <button>
       Number
     </button>
@@ -34,14 +38,17 @@
     <hr/>
     <hr/>
     <label for="addTwoNums">Add two numbers together</label>
-    <input id="addTwoNums">
-    <button>
+    <input type="number" id="x" name="x" value="">
+    <input type="number" id="y" name="y" value="">
+    <button onclick="addTwo()" id="addBtn">
       Add 'Em
     </button>
+    <div id="show-sum" style="font-size: 32px; color: tomato; font-weight: bold; margin-left: 20px;"></div>
     <hr/>
     <hr/>
     <label for="checkTwoBools">Enter true or false into the boxes</label>
-    <input id="checkTwoBools">
+    <input id="boolFirst" name="boolFirst">
+    <input id="boolSecond" name="boolSecond">
     <button>
       Outcome
     </button>
