@@ -27,39 +27,28 @@ const str_to_num = (str) =>{
 }
 str_to_num();
 
-
-// Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-  // * Boolean
-  // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
-
 const get_type = (data) =>{
   return typeof(data);
 }
 get_type()
   
-// Write a JavaScript program that adds 2 numbers together.
 const addTwo = (x, y) =>{
   return x + y;
 }
 
 
-
-// Write a JavaScript program that runs only when 2 things are true.
-
-
-
-// Write a JavaScript program that runs when 1 of 2 things are true.
-
-
-
-// Write a JavaScript program that runs when both things are not true.  
 const checkBool = (boolFirst, boolSecond) =>{
   if(boolFirst == true && boolSecond == true){
     return "Both values are true";
+  }
+  else if(boolFirst == false && boolSecond == true || boolFirst == true && boolSecond == false){
+    return "Only one of these values are true"
+  }
+  else if(boolFirst == false && boolSecond == false){
+    return "Both values are false"
+  }
+  else{
+    return "You did not put a bool in the box! Please only put in either true or false in the input!"
   }
 }
 
