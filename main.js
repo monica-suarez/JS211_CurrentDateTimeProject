@@ -18,7 +18,7 @@ const displayDate = () => {
 const num_to_str = (num) =>{
   return num.toString();
 }
-num_to_str();
+
 
 
 // Write a JavaScript program to convert a string to the number.
@@ -30,7 +30,7 @@ str_to_num();
 const get_type = (data) =>{
   return typeof(data);
 }
-get_type()
+get_type();
   
 const addTwo = (x, y) =>{
   return x + y;
