@@ -37,10 +37,10 @@ const str_to_num = () =>{
 //   console.log(typeof(data));
 // }
 const get_type = () =>{
-  let data = document.getElementById("data").value
-  // getType = typeof(data);
-  document.getElementById("show-data-type").innerHTML = typeof data;
-  console.log(typeof data);
+  let data = typeof(document.getElementById("data").value)
+  getType = typeof(data);
+  document.getElementById("show-data-type").innerHTML = getType;
+  console.log(getType);
 
 }
 const addTwo = () =>{
@@ -51,18 +51,22 @@ const addTwo = () =>{
   console.log(sum);
 }
 
-const checkBool = (boolFirst, boolSecond) =>{
+const checkBool = () =>{
+  let boolFirst = document.getElementById("boolFirst").value;
+  let boolSecond = document.getElementById("boolSecond").value;
+
   if(boolFirst == true && boolSecond == true){
-    return "Both values are true";
+    console.log("Both are true");
   }
   else if(boolFirst == false && boolSecond == true || boolFirst == true && boolSecond == false){
-    return "Only one of these values are true"
+    console.log("Only one of these values are true");
   }
   else if(boolFirst == false && boolSecond == false){
-    return "Both values are false"
+    console.log("Both values are false");
   }
   else{
-    return "You did not put a bool in the box! Please only put in either true or false in the input!"
+    document.getElementById("show-bool-result-c").innerHTML = "You did not put a bool in the box! Please only put in either true or false in the input!"
+    console.log("You did not put a bool in the box! Please only put in either true or false in the input!");
   }
 }
 
