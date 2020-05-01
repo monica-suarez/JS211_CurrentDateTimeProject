@@ -5,6 +5,8 @@
 //          PART ONE
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
+
+//!!!!!!!!!!!!!!HI THERE - THIS ALREADY WORKS I DO NOT KNOW WHAT TO MODIFY
 console.log(new Date)
 
 const displayDate = () => {
