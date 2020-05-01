@@ -60,13 +60,14 @@ const addTwo = () =>{
   console.log(sum);
 }
 
-boolFirst = boolFirst.toLowerCase();
-boolSecond = boolSecond.toLowerCase();
-boolFirst = boolFirst.trim();
-boolSecond = boolSecond.trim();
+
 const checkBool = () =>{
   let boolFirst = document.getElementById("boolFirst").value;
   let boolSecond = document.getElementById("boolSecond").value;
+  boolFirst = boolFirst.toLowerCase();
+  boolSecond = boolSecond.toLowerCase();
+  boolFirst = boolFirst.trim();
+  boolSecond = boolSecond.trim();
   if(boolFirst == "true" && boolSecond == "true"){
     document.getElementById("show-bool-result").innerHTML = "Both values are true";
     console.log("Both values are true");
