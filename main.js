@@ -37,12 +37,19 @@ const str_to_num = () =>{
 //   console.log(typeof(data));
 // }
 const get_type = () =>{
-  let data = typeof(document.getElementById("data").value)
-  getType = typeof(data);
-  document.getElementById("show-data-type").innerHTML = getType;
-  console.log(getType);
-
+  let data = document.getElementById("data").value;
+  if (data === "null"){
+    document.getElementById("show-data-type").innerHTML = "null";
+  } else if(data === "true"){
+    document.getElementById("show-data-type").innerHTML = "boolean";
+  } else if(data === "false"){
+    document.getElementById("show-data-type").innerHTML = "boolean";
+  }else if(data <= Number.MAX_VALUE){
+    document.getElementById("show-data-type").innerHTML = "number";
+  }else{
+    document.getElementById("show-data-type").innerHTML = typeof data};
 }
+
 const addTwo = () =>{
   let x = parseInt(document.getElementById("x").value);
   let y= parseInt(document.getElementById("y").value);
@@ -51,21 +58,27 @@ const addTwo = () =>{
   console.log(sum);
 }
 
+boolFirst = boolFirst.toLowerCase();
+boolSecond = boolSecond.toLowerCase();
+boolFirst = boolFirst.trim();
+boolSecond = boolSecond.trim();
 const checkBool = () =>{
   let boolFirst = document.getElementById("boolFirst").value;
   let boolSecond = document.getElementById("boolSecond").value;
-
-  if(boolFirst == true && boolSecond == true){
-    console.log("Both are true");
+  if(boolFirst == "true" && boolSecond == "true"){
+    document.getElementById("show-bool-result").innerHTML = "Both values are true";
+    console.log("Both values are true");
   }
-  else if(boolFirst == false && boolSecond == true || boolFirst == true && boolSecond == false){
+  else if(boolFirst == "false" && boolSecond == "true" || boolFirst == "true" && boolSecond == "false"){
+    document.getElementById("show-bool-result").innerHTML = "Only one of these values are true"
     console.log("Only one of these values are true");
   }
-  else if(boolFirst == false && boolSecond == false){
+  else if(boolFirst == "false" && boolSecond == "false"){
+    document.getElementById("show-bool-result").innerHTML = "Both values are false";
     console.log("Both values are false");
   }
   else{
-    document.getElementById("show-bool-result-c").innerHTML = "You did not put a bool in the box! Please only put in either true or false in the input!"
+    document.getElementById("show-bool-result").innerHTML = "You did not put a bool in the box! Please only put in either true or false in the input!"
     console.log("You did not put a bool in the box! Please only put in either true or false in the input!");
   }
 }
